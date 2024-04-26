@@ -27,15 +27,15 @@ close all
 clc
 
 %%  Define path to the data and dependent scripts
-%addpath(genpath('E:\PROJECT\Swansea\SEEG segmentation\Edited - OneDrive_1_10-6-2023\scripts\iElectrodes')); % Path to the iElectrodes script folder
-addpath(genpath('E:\PROJECT\Swansea\SEEG segmentation\Edited - OneDrive_1_10-6-2023\DELRecon')); % Path to the main script folder
+%addpath(genpath('E:\PROJECT\SEEG segmentation\Edited\scripts\iElectrodes')); % Path to the iElectrodes script folder
+addpath(genpath('E:\PROJECT\SEEG segmentation\Edited\DELRecon')); % Path to the main script folder
 
 %Inputs - change per patient (Keep default treshold value in most cases unless required to change)
 sub = 'subject'; % subject folder to be processed
 nEle = 7; % Define number of electrodes implanted
 firstThreshold = 650; % Define the threshold to create the electrode image from CT difference image
 clr = lines(nEle); % for color of different lines based on number of electrodes
-basedir = strcat('E:\PROJECT\Swansea\SEEG segmentation\Edited - OneDrive_1_10-6-2023\DELRecon\',sub,'\Imaging\'); %path to the data to be processed
+basedir = strcat('E:\PROJECT\SEEG segmentation\Edited\DELRecon\',sub,'\Imaging\'); %path to the data to be processed
 cd(basedir);
 
 %% Load brain masked CT difference image
