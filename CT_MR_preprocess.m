@@ -11,7 +11,7 @@
 clear all
 close all
 %%  Define path to the data
-basedir = 'E:\PROJECT\Swansea\SEEG segmentation\Edited - OneDrive_1_10-6-2023\DELRecon\'; % Path to the subject folder
+basedir = 'E:\PROJECT\SEEG segmentation\Edited\DELRecon\'; % Path to the subject folder
 sub = 'subject'; % subject folder to be processed
 cd(basedir);
 subjdir = strcat(basedir,sub,'\Imaging\'); %path to the data to be processed
